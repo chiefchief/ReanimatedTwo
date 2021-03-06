@@ -16,7 +16,7 @@ const initialstate = new INITIAL_GLOBAL();
 export default (state = initialstate, action: any) => {
   switch (action.type) {
     case SET_LOADER:
-      return new INITIAL_GLOBAL({...state, loader: action.loader})
+      return new INITIAL_GLOBAL({...state, loader: action.loader});
     case RESET_GLOBAL:
       return initialstate;
     default:

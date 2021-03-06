@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {
   Start,
+  ColorSelection,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -21,8 +22,9 @@ const AuthNavigator: React.FC = () => {
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator>
+    <HomeStack.Navigator initialRouteName={'ColorSelection'}>
       <HomeStack.Screen name="Start" component={Start} />
+      <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
     </HomeStack.Navigator>
   );
 };
@@ -31,7 +33,7 @@ const AppNavigator: React.FC = () => {
   return (
     <NavigationContainer ref={navigationRef} onStateChange={onStateChange}>
       <InitialStack.Navigator screenOptions={{headerShown: false}}>
-        {false ? (
+        {true ? (
           <InitialStack.Screen name="HomeNavigator" component={HomeNavigator} />
         ) : (
           <InitialStack.Screen name="AuthNavigator" component={AuthNavigator} />

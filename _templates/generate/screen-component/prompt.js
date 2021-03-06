@@ -10,6 +10,7 @@ module.exports = [
     message: 'Select screen folder...',
     choices: [
       'Start',
+      'ColorSelection',
       //ADD MORE SCREENS
     ],
   },

@@ -12,7 +12,7 @@ const initialstate = new INITIAL_PERSISTED();
 export default (state = initialstate, action: any) => {
   switch (action.type) {
     case CHANGE_TOKEN:
-      return new INITIAL_PERSISTED({...state, token: action.token})
+      return new INITIAL_PERSISTED({...state, token: action.token});
     case RESET_PERSISTED:
       return initialstate;
     default:

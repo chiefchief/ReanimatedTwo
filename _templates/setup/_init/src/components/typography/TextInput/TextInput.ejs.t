@@ -11,4 +11,3 @@ const TextInput: React.FC<TextInputProps> = ({style, ...TIProps}) => {
 };
 
 export default TextInput;
-

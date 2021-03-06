@@ -11,6 +11,7 @@ module.exports = [
     choices: [
       'Start',
       'ColorSelection',
+      'LongPress',
       //ADD MORE SCREENS
     ],
   },

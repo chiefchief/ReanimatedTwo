@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {
   Start,
   ColorSelection,
+  LongPress,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -22,9 +23,10 @@ const AuthNavigator: React.FC = () => {
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator initialRouteName={'ColorSelection'}>
+    <HomeStack.Navigator initialRouteName={'LongPress'}>
       <HomeStack.Screen name="Start" component={Start} />
       <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
+      <HomeStack.Screen name="LongPress" component={LongPress} options={{headerShown: false}} />
     </HomeStack.Navigator>
   );
 };

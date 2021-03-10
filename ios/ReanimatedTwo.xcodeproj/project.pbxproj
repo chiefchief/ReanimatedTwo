@@ -11,7 +11,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DF98264F3A39E72584064192 /* libPods-ReanimatedTwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190B6C28E99779E2CC69EF0D /* libPods-ReanimatedTwo.a */; };
+		A1A8609C8EA8C96775466589 /* libPods-ReanimatedTwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0E992C8339FC3597431298 /* libPods-ReanimatedTwo.a */; };
 		EFA56C57F5C44AEA967EBE4A /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC5DD6AABEA14B899279061C /* icomoon.ttf */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +22,13 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReanimatedTwo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReanimatedTwo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReanimatedTwo/main.m; sourceTree = "<group>"; };
-		190B6C28E99779E2CC69EF0D /* libPods-ReanimatedTwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedTwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		19FD8844780B7D1269D91931 /* Pods-ReanimatedTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.debug.xcconfig"; sourceTree = "<group>"; };
+		1ED659415F00E6982F31B339 /* Pods-ReanimatedTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReanimatedTwo/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A4D1255DFD676DD8F9C25365 /* Pods-ReanimatedTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.release.xcconfig"; sourceTree = "<group>"; };
+		BC5DD6AABEA14B899279061C /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
+		EAA52D4BA859476F727353FC /* Pods-ReanimatedTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		BC5DD6AABEA14B899279061C /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../src/assets/fonts/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF0E992C8339FC3597431298 /* libPods-ReanimatedTwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedTwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF98264F3A39E72584064192 /* libPods-ReanimatedTwo.a in Frameworks */,
+				A1A8609C8EA8C96775466589 /* libPods-ReanimatedTwo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +61,18 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				190B6C28E99779E2CC69EF0D /* libPods-ReanimatedTwo.a */,
+				FF0E992C8339FC3597431298 /* libPods-ReanimatedTwo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6062B22E7DE94FFBABA717E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DD6AABEA14B899279061C /* icomoon.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -99,20 +108,11 @@
 		D22C34DAE0B2670F5D118D4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				19FD8844780B7D1269D91931 /* Pods-ReanimatedTwo.debug.xcconfig */,
-				A4D1255DFD676DD8F9C25365 /* Pods-ReanimatedTwo.release.xcconfig */,
+				1ED659415F00E6982F31B339 /* Pods-ReanimatedTwo.debug.xcconfig */,
+				EAA52D4BA859476F727353FC /* Pods-ReanimatedTwo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		6062B22E7DE94FFBABA717E2 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BC5DD6AABEA14B899279061C /* icomoon.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -121,13 +121,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReanimatedTwo" */;
 			buildPhases = (
-				57FB2DB502C7FAA0568CBA23 /* [CP] Check Pods Manifest.lock */,
+				4F5D109208CAB08200245915 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E750306B4EF1BE24105DE5FA /* [CP] Copy Pods Resources */,
+				36818534CF829BBF4CF780B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,29 +197,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		57FB2DB502C7FAA0568CBA23 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReanimatedTwo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E750306B4EF1BE24105DE5FA /* [CP] Copy Pods Resources */ = {
+		36818534CF829BBF4CF780B5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,6 +247,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4F5D109208CAB08200245915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReanimatedTwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,7 +305,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19FD8844780B7D1269D91931 /* Pods-ReanimatedTwo.debug.xcconfig */;
+			baseConfigurationReference = 1ED659415F00E6982F31B339 /* Pods-ReanimatedTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -328,7 +328,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D1255DFD676DD8F9C25365 /* Pods-ReanimatedTwo.release.xcconfig */;
+			baseConfigurationReference = EAA52D4BA859476F727353FC /* Pods-ReanimatedTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

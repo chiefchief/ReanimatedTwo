@@ -9,4 +9,4 @@ import OtherApp from './src/screens/RNRExamples/src/App';
 LogBox.ignoreAllLogs();
 
 enableScreens();
-AppRegistry.registerComponent(name, () => OtherApp);
+AppRegistry.registerComponent(name, () => App);

@@ -7,6 +7,7 @@ import {
   LongPress,
   SwipeButton,
   Breathe,
+  DragAndDrop,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -25,12 +26,13 @@ const AuthNavigator: React.FC = () => {
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator initialRouteName={'Breathe'}>
+    <HomeStack.Navigator initialRouteName={'DragAndDrop'}>
       <HomeStack.Screen name="Start" component={Start} />
       <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
       <HomeStack.Screen name="LongPress" component={LongPress} />
       <HomeStack.Screen name="SwipeButton" component={SwipeButton} />
       <HomeStack.Screen name="Breathe" component={Breathe} />
+      <HomeStack.Screen name="DragAndDrop" component={DragAndDrop} />
     </HomeStack.Navigator>
   );
 };

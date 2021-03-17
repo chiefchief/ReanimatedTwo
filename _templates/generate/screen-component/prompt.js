@@ -14,6 +14,7 @@ module.exports = [
       'LongPress',
       'SwipeButton',
       'Breathe',
+      'DragAndDrop',
       //ADD MORE SCREENS
     ],
   },

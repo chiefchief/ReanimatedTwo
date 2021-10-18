@@ -15,6 +15,10 @@ module.exports = [
       'SwipeButton',
       'Breathe',
       'DragAndDrop',
+      'Duolingo',
+      'SwipeToDelete',
+      'RotaryLogin',
+      'RippleEffect',
       //ADD MORE SCREENS
     ],
   },

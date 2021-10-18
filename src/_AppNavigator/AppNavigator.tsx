@@ -8,21 +8,18 @@ import {
   SwipeButton,
   Breathe,
   DragAndDrop,
+  Duolingo,
+  LiquidSwipe,
+  MoveSongList,
+  SwipeToDelete,
+  RotaryLogin,
+  RippleEffect,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
 
 const InitialStack = createStackNavigator();
-const AuthStack = createStackNavigator();
 const HomeStack = createStackNavigator();
-
-const AuthNavigator: React.FC = () => {
-  return (
-    <AuthStack.Navigator>
-      <AuthStack.Screen name="Start" component={Start} />
-    </AuthStack.Navigator>
-  );
-};
 
 const HomeNavigator: React.FC = () => {
   return (
@@ -33,6 +30,13 @@ const HomeNavigator: React.FC = () => {
       <HomeStack.Screen name="SwipeButton" component={SwipeButton} />
       <HomeStack.Screen name="Breathe" component={Breathe} />
       <HomeStack.Screen name="DragAndDrop" component={DragAndDrop} />
+      <HomeStack.Screen name="Duolingo" component={Duolingo} />
+      <HomeStack.Screen name="LiquidSwipe" component={LiquidSwipe} />
+      <HomeStack.Screen name="MoveSongList" component={MoveSongList} options={{headerShown: false}} />
+      <HomeStack.Screen name="SwipeToDelete" component={SwipeToDelete} />
+      {/* FIX -> */}
+      <HomeStack.Screen name="RotaryLogin" component={RotaryLogin} />
+      <HomeStack.Screen name="RippleEffect" component={RippleEffect} />
     </HomeStack.Navigator>
   );
 };
@@ -41,11 +45,7 @@ const AppNavigator: React.FC = () => {
   return (
     <NavigationContainer ref={navigationRef} onStateChange={onStateChange}>
       <InitialStack.Navigator screenOptions={{headerShown: false}}>
-        {true ? (
-          <InitialStack.Screen name="HomeNavigator" component={HomeNavigator} />
-        ) : (
-          <InitialStack.Screen name="AuthNavigator" component={AuthNavigator} />
-        )}
+        <InitialStack.Screen name="HomeNavigator" component={HomeNavigator} />
       </InitialStack.Navigator>
     </NavigationContainer>
   );

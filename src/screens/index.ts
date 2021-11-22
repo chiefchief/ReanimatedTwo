@@ -10,3 +10,4 @@ export {default as MoveSongList} from './MoveSongList/MoveSongList';
 export {default as SwipeToDelete} from './SwipeToDelete/SwipeToDelete';
 export {default as RotaryLogin} from './RotaryLogin/RotaryLogin';
 export {default as RippleEffect} from './RippleEffect/RippleEffect';
+export {Tarot} from './Tarot/Tarot';

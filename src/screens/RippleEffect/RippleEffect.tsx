@@ -1,3 +1,9 @@
+/**
+ *
+ * https://youtu.be/QxGQwRqxbSA
+ *
+ */
+
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Ripple from './Ripple';

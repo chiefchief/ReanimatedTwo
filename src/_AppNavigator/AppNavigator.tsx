@@ -14,6 +14,7 @@ import {
   SwipeToDelete,
   RotaryLogin,
   RippleEffect,
+  Tarot,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -37,6 +38,7 @@ const HomeNavigator: React.FC = () => {
       {/* FIX -> */}
       <HomeStack.Screen name="RotaryLogin" component={RotaryLogin} />
       <HomeStack.Screen name="RippleEffect" component={RippleEffect} />
+      <HomeStack.Screen name="Tarot" component={Tarot} />
     </HomeStack.Navigator>
   );
 };

@@ -19,6 +19,7 @@ module.exports = [
       'SwipeToDelete',
       'RotaryLogin',
       'RippleEffect',
+      'Tarot',
       //ADD MORE SCREENS
     ],
   },

@@ -10,4 +10,4 @@ import Test from './Test';
 LogBox.ignoreAllLogs();
 
 enableScreens();
-AppRegistry.registerComponent(name, () => Test);
+AppRegistry.registerComponent(name, () => App);

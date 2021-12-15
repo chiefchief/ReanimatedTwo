@@ -15,6 +15,8 @@ import {
   RotaryLogin,
   RippleEffect,
   Tarot,
+  Switch,
+  RingWaveIndicator,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -24,7 +26,7 @@ const HomeStack = createStackNavigator();
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator initialRouteName={'DragAndDrop'}>
+    <HomeStack.Navigator initialRouteName={'Switch'}>
       <HomeStack.Screen name="Start" component={Start} />
       <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
       <HomeStack.Screen name="LongPress" component={LongPress} />
@@ -39,6 +41,8 @@ const HomeNavigator: React.FC = () => {
       <HomeStack.Screen name="RotaryLogin" component={RotaryLogin} />
       <HomeStack.Screen name="RippleEffect" component={RippleEffect} />
       <HomeStack.Screen name="Tarot" component={Tarot} />
+      <HomeStack.Screen name="Switch" component={Switch} />
+      <HomeStack.Screen name="RingWaveIndicator" component={RingWaveIndicator} />
     </HomeStack.Navigator>
   );
 };

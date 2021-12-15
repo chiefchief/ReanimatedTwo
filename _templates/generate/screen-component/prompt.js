@@ -20,6 +20,8 @@ module.exports = [
       'RotaryLogin',
       'RippleEffect',
       'Tarot',
+      'Switch',
+      'RingWaveIndicator',
       //ADD MORE SCREENS
     ],
   },

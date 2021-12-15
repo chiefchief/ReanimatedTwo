@@ -22,6 +22,7 @@ module.exports = [
       'Tarot',
       'Switch',
       'RingWaveIndicator',
+      'ScrollToIndex',
       //ADD MORE SCREENS
     ],
   },

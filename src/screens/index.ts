@@ -13,3 +13,4 @@ export {default as RippleEffect} from './RippleEffect/RippleEffect';
 export {Tarot} from './Tarot/Tarot';
 export {default as Switch} from './Switch/Switch';
 export {default as RingWaveIndicator} from './RingWaveIndicator/RingWaveIndicator';
+export {default as ScrollToIndex} from './ScrollToIndex/ScrollToIndex';

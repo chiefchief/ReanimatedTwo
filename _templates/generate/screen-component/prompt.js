@@ -23,6 +23,7 @@ module.exports = [
       'Switch',
       'RingWaveIndicator',
       'ScrollToIndex',
+      'PerspectiveMenu',
       //ADD MORE SCREENS
     ],
   },

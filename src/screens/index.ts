@@ -14,3 +14,4 @@ export {Tarot} from './Tarot/Tarot';
 export {default as Switch} from './Switch/Switch';
 export {default as RingWaveIndicator} from './RingWaveIndicator/RingWaveIndicator';
 export {default as ScrollToIndex} from './ScrollToIndex/ScrollToIndex';
+export {default as PerspectiveMenu} from './PerspectiveMenu/PerspectiveMenu';

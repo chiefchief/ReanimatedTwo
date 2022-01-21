@@ -15,3 +15,5 @@ export {default as Switch} from './Switch/Switch';
 export {default as RingWaveIndicator} from './RingWaveIndicator/RingWaveIndicator';
 export {default as ScrollToIndex} from './ScrollToIndex/ScrollToIndex';
 export {default as PerspectiveMenu} from './PerspectiveMenu/PerspectiveMenu';
+export {default as SlidingCounter} from './SlidingCounter/SlidingCounter';
+export {default as ClockLoader} from './ClockLoader/ClockLoader';

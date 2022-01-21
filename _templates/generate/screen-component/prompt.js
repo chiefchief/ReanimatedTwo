@@ -24,6 +24,8 @@ module.exports = [
       'RingWaveIndicator',
       'ScrollToIndex',
       'PerspectiveMenu',
+      'SlidingCounter',
+      'ClockLoader',
       //ADD MORE SCREENS
     ],
   },

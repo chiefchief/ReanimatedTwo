@@ -19,6 +19,8 @@ import {
   RingWaveIndicator,
   ScrollToIndex,
   PerspectiveMenu,
+  SlidingCounter,
+  ClockLoader,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -28,7 +30,7 @@ const HomeStack = createStackNavigator();
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator initialRouteName={'PerspectiveMenu'}>
+    <HomeStack.Navigator initialRouteName={'ClockLoader'}>
       <HomeStack.Screen name="Start" component={Start} />
       <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
       <HomeStack.Screen name="LongPress" component={LongPress} />
@@ -47,6 +49,8 @@ const HomeNavigator: React.FC = () => {
       <HomeStack.Screen name="RingWaveIndicator" component={RingWaveIndicator} />
       <HomeStack.Screen name="ScrollToIndex" component={ScrollToIndex} options={{headerShown: false}} />
       <HomeStack.Screen name="PerspectiveMenu" component={PerspectiveMenu} options={{headerShown: false}} />
+      <HomeStack.Screen name="SlidingCounter" component={SlidingCounter} options={{headerShown: false}} />
+      <HomeStack.Screen name="ClockLoader" component={ClockLoader} options={{headerShown: false}} />
     </HomeStack.Navigator>
   );
 };

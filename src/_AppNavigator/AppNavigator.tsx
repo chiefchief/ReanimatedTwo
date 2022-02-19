@@ -21,6 +21,8 @@ import {
   PerspectiveMenu,
   SlidingCounter,
   ClockLoader,
+  AnimatedBottomSheet,
+  WhatAboutGestures,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -30,7 +32,7 @@ const HomeStack = createStackNavigator();
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator initialRouteName={'ClockLoader'}>
+    <HomeStack.Navigator initialRouteName={'WhatAboutGestures'}>
       <HomeStack.Screen name="Start" component={Start} />
       <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
       <HomeStack.Screen name="LongPress" component={LongPress} />
@@ -51,6 +53,9 @@ const HomeNavigator: React.FC = () => {
       <HomeStack.Screen name="PerspectiveMenu" component={PerspectiveMenu} options={{headerShown: false}} />
       <HomeStack.Screen name="SlidingCounter" component={SlidingCounter} options={{headerShown: false}} />
       <HomeStack.Screen name="ClockLoader" component={ClockLoader} options={{headerShown: false}} />
+      {/* TODO: UPDATE ANIMATION */}
+      <HomeStack.Screen name="AnimatedBottomSheet" component={AnimatedBottomSheet} options={{headerShown: false}} />
+      <HomeStack.Screen name="WhatAboutGestures" component={WhatAboutGestures} options={{headerShown: false}} />
     </HomeStack.Navigator>
   );
 };

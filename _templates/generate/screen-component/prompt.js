@@ -26,6 +26,8 @@ module.exports = [
       'PerspectiveMenu',
       'SlidingCounter',
       'ClockLoader',
+      'AnimatedBottomSheet',
+      'WhatAboutGestures',
       //ADD MORE SCREENS
     ],
   },

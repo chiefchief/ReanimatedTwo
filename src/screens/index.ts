@@ -17,3 +17,5 @@ export {default as ScrollToIndex} from './ScrollToIndex/ScrollToIndex';
 export {default as PerspectiveMenu} from './PerspectiveMenu/PerspectiveMenu';
 export {default as SlidingCounter} from './SlidingCounter/SlidingCounter';
 export {default as ClockLoader} from './ClockLoader/ClockLoader';
+export {AnimatedBottomSheet} from './AnimatedBottomSheet/AnimatedBottomSheet';
+export {WhatAboutGestures} from './WhatAboutGestures/WhatAboutGestures';

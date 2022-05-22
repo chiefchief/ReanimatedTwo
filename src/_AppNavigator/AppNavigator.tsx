@@ -23,6 +23,7 @@ import {
   ClockLoader,
   AnimatedBottomSheet,
   WhatAboutGestures,
+  WheelPicker,
   // ADD NEW SCREEN
 } from '@screens';
 import {navigationRef, onStateChange} from '@services';
@@ -32,7 +33,7 @@ const HomeStack = createStackNavigator();
 
 const HomeNavigator: React.FC = () => {
   return (
-    <HomeStack.Navigator initialRouteName={'WhatAboutGestures'}>
+    <HomeStack.Navigator initialRouteName={'WheelPicker'}>
       <HomeStack.Screen name="Start" component={Start} />
       <HomeStack.Screen name="ColorSelection" component={ColorSelection} options={{headerShown: false}} />
       <HomeStack.Screen name="LongPress" component={LongPress} />
@@ -56,6 +57,7 @@ const HomeNavigator: React.FC = () => {
       {/* TODO: UPDATE ANIMATION */}
       <HomeStack.Screen name="AnimatedBottomSheet" component={AnimatedBottomSheet} options={{headerShown: false}} />
       <HomeStack.Screen name="WhatAboutGestures" component={WhatAboutGestures} options={{headerShown: false}} />
+      <HomeStack.Screen name="WheelPicker" component={WheelPicker} options={{headerShown: false}} />
     </HomeStack.Navigator>
   );
 };

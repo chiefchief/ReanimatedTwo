@@ -28,6 +28,7 @@ module.exports = [
       'ClockLoader',
       'AnimatedBottomSheet',
       'WhatAboutGestures',
+      'WheelPicker',
       //ADD MORE SCREENS
     ],
   },

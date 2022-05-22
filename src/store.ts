@@ -1,10 +1,9 @@
 import {createStore, applyMiddleware} from 'redux';
-import {composeWithDevTools} from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 import reducers from './reducers';
 import rootSaga from './reducers/sagas';
 import {persistStore, persistReducer} from 'redux-persist';
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -18,7 +17,7 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, reducers);
 
 const storeCreation: TStore = () => {
-  const enhancer = composeWithDevTools(applyMiddleware(sagaMiddleware));
+  const enhancer = applyMiddleware(sagaMiddleware);
   const store = createStore(persistedReducer, enhancer);
   const persistor = persistStore(store);
 

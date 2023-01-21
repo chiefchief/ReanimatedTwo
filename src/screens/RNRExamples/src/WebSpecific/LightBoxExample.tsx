@@ -11,7 +11,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import {Dimensions, StyleSheet, View, Image, Platform} from 'react-native';
 import {ScrollView, PanGestureHandler, TouchableWithoutFeedback} from 'react-native-gesture-handler';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useHeaderHeight} from '@react-navigation/elements';
 
 const AnimatedImage = Animated.createAnimatedComponent(Image);
 
@@ -114,7 +114,7 @@ function ImageTransition({activeImage, onClose}: ImageTransitionProps) {
   const translateY = useSharedValue(0);
 
   const onPan = useAnimatedGestureHandler({
-    onActive: (event) => {
+    onActive: event => {
       translateX.value = event.translationX;
       translateY.value = event.translationY;
 

@@ -92,16 +92,16 @@ type MainScreenProps = {
 };
 
 function MainScreen({navigation, setUseRea2}: MainScreenProps) {
-  const data = Object.keys(SCREENS).map((key) => ({key}));
+  const data = Object.keys(SCREENS).map(key => ({key}));
   return (
     <FlatList
       style={styles.list}
       data={data}
       ItemSeparatorComponent={ItemSeparator}
-      renderItem={(props) => (
+      renderItem={props => (
         <MainScreenItem {...props} screens={SCREENS} onPressItem={({key}) => navigation.navigate(key)} />
       )}
-      renderScrollComponent={(props) => <ScrollView {...props} />}
+      renderScrollComponent={props => <ScrollView {...props} />}
       ListFooterComponent={() => <LaunchReanimated1 setUseRea2={setUseRea2} />}
     />
   );
@@ -144,9 +144,9 @@ const Reanimated2 = (setUseRea2: (useRea2: boolean) => void) => (
     <Stack.Screen
       name="Home"
       options={{title: '🎬 Reanimated 2.x Examples'}}
-      children={(props) => <MainScreen {...props} setUseRea2={setUseRea2} />}
+      children={props => <MainScreen {...props} setUseRea2={setUseRea2} />}
     />
-    {Object.keys(SCREENS).map((name) => (
+    {Object.keys(SCREENS).map(name => (
       <Stack.Screen
         key={name}
         name={name}

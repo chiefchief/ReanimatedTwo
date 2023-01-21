@@ -24,12 +24,12 @@ const LongPress: React.FC = () => {
   const progress = useSharedValue(0);
   const [secondPress, setSecondPress] = useState(false);
 
-  const setTrue = (isFinished: boolean) => {
+  const setTrue = (isFinished?: boolean) => {
     if (isFinished) {
       setActive(true);
     }
   };
-  const setSecond = (isFinished: boolean) => {
+  const setSecond = (isFinished?: boolean) => {
     if (isFinished) {
       setSecondPress(false);
     }
@@ -37,7 +37,7 @@ const LongPress: React.FC = () => {
 
   const _onPressIn = () => {
     if (!active) {
-      progress.value = withTiming(1, {duration: 2000}, (isFinished) => runOnJS(setTrue)(isFinished));
+      progress.value = withTiming(1, {duration: 2000}, isFinished => runOnJS(setTrue)(isFinished));
     }
     if (active && secondPress) {
       setActive(false);
@@ -47,7 +47,7 @@ const LongPress: React.FC = () => {
     if (active) {
       setSecondPress(true);
     } else {
-      progress.value = withTiming(0, {duration: 400}, (isFinished) => runOnJS(setSecond)(isFinished));
+      progress.value = withTiming(0, {duration: 400}, isFinished => runOnJS(setSecond)(isFinished));
       setActive(false);
     }
   };

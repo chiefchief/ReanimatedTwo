@@ -3,16 +3,16 @@ import {StyleSheet} from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
 
-import {PanGestureHandler} from 'react-native-gesture-handler';
+import {PanGestureHandler, PanGestureHandlerGestureEvent} from 'react-native-gesture-handler';
 import Animated, {
   useAnimatedGestureHandler,
-  useSharedValue,
   useAnimatedStyle,
   withSpring,
   interpolate,
   Extrapolate,
   interpolateColor,
   runOnJS,
+  SharedValue,
 } from 'react-native-reanimated';
 import {useState} from 'react';
 
@@ -25,20 +25,28 @@ const H_WAVE_RANGE = SWIPEABLE_DIMENSIONS + 2 * BUTTON_PADDING;
 export const H_SWIPE_RANGE = BUTTON_WIDTH - 2 * BUTTON_PADDING - SWIPEABLE_DIMENSIONS;
 const AnimatedLinearGradient = Animated.createAnimatedComponent(LinearGradient);
 
-const SwipeButton = ({X}) => {
+type Context = {
+  completed: boolean;
+};
+
+type SwipeButtonProps = {
+  X: SharedValue<number>;
+};
+
+const SwipeButton: React.FC<SwipeButtonProps> = ({X}) => {
   // Animated value for X translation
   // Toggled State
   const [toggled, setToggled] = useState(false);
 
   // Fires when animation ends
-  const handleComplete = (isToggled) => {
+  const handleComplete = (isToggled: boolean) => {
     if (isToggled !== toggled) {
       setToggled(isToggled);
     }
   };
 
   // Gesture Handler Events
-  const animatedGestureHandler = useAnimatedGestureHandler({
+  const animatedGestureHandler = useAnimatedGestureHandler<PanGestureHandlerGestureEvent, Context>({
     onStart: (_, ctx) => {
       ctx.completed = toggled;
     },

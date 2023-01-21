@@ -83,16 +83,16 @@ type MainScreenProps = {
 };
 
 function MainScreen({navigation}: MainScreenProps) {
-  const data = Object.keys(SCREENS).map((key) => ({key}));
+  const data = Object.keys(SCREENS).map(key => ({key}));
   return (
     <FlatList
       style={styles.list}
       data={data}
       ItemSeparatorComponent={ItemSeparator}
-      renderItem={(props) => (
+      renderItem={props => (
         <MainScreenItem {...props} screens={SCREENS} onPressItem={({key}) => navigation.navigate(key)} />
       )}
-      renderScrollComponent={(props) => <ScrollView {...props} />}
+      renderScrollComponent={props => <ScrollView {...props} />}
     />
   );
 }
@@ -123,7 +123,7 @@ function App(): React.ReactElement {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" options={{title: '🎬 Reanimated 2.x Examples'}} component={MainScreen} />
-        {Object.keys(SCREENS).map((name) => (
+        {Object.keys(SCREENS).map(name => (
           <Stack.Screen
             key={name}
             name={name}

@@ -23,7 +23,7 @@ const Breathe: React.FC = () => {
   }));
   return (
     <View style={styles.container}>
-      <Animated.View style={style}>
+      <Animated.View style={[style]}>
         {new Array(6).fill(0).map((_, index) => (
           <Circle progress={progress} index={index} key={index} goesDown={goesDown} />
         ))}

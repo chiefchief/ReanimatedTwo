@@ -1,3 +1,4 @@
+import {useHeaderHeight} from '@react-navigation/elements';
 import React from 'react';
 import {View, StyleSheet, Platform, Dimensions} from 'react-native';
 import Animated, {
@@ -6,7 +7,6 @@ import Animated, {
   useAnimatedStyle,
   useAnimatedScrollHandler,
 } from 'react-native-reanimated';
-import {useHeaderHeight} from '@react-navigation/stack';
 
 const size = 40;
 
@@ -16,7 +16,7 @@ function ScrollExample(): React.ReactElement {
   const headerHeight = useHeaderHeight();
 
   const scrollHandler = useAnimatedScrollHandler({
-    onScroll: (event) => {
+    onScroll: event => {
       transY.value = event.contentOffset.y;
     },
     onBeginDrag: () => {
@@ -28,15 +28,15 @@ function ScrollExample(): React.ReactElement {
   });
 
   const stylez = useAnimatedStyle(() => {
-    const size = isScrolling.value ? 80 : 40;
+    const resSize = isScrolling.value ? 80 : 40;
     return {
       transform: [
         {
           translateY: transY.value,
         },
       ],
-      width: withSpring(size),
-      height: withSpring(size),
+      width: withSpring(resSize),
+      height: withSpring(resSize),
     };
   });
 

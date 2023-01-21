@@ -23,14 +23,14 @@ const sendRequest = async ({method, url, data = undefined, params = undefined}: 
     const response = await instance(OPTIONS);
     return formatResponse(response);
   } catch (error) {
-    if (error.response?.status === 408 || error.code === 'ECONNABORTED') {
+    if ((error as any).response?.status === 408 || (error as any).code === 'ECONNABORTED') {
       throw formatResponse({
         status: 408,
         statusText: 'Request timeout!!',
       });
     }
 
-    throw formatResponse(error.response);
+    throw formatResponse((error as any).response);
   }
 };
 

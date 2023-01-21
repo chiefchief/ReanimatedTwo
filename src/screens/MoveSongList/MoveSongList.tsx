@@ -15,8 +15,8 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import {PanGestureHandler} from 'react-native-gesture-handler';
-import * as Haptics from 'expo-haptics';
-import {BlurView} from 'expo-blur';
+// import * as Haptics from 'expo-haptics'; // ADD EXPO
+// import {BlurView} from 'expo-blur'; // ADD EXPO
 
 function clamp(value, lowerBound, upperBound) {
   'worklet';
@@ -220,7 +220,7 @@ function MovableSong({id, artist, cover, title, positions, scrollY, songsCount})
       runOnJS(setMoving)(true);
 
       if (Platform.OS === 'ios') {
-        runOnJS(Haptics.impactAsync)(Haptics.ImpactFeedbackStyle.Medium);
+        // runOnJS(Haptics.impactAsync)(Haptics.ImpactFeedbackStyle.Medium); // add haptic
       }
     },
     onActive(event) {
@@ -249,7 +249,7 @@ function MovableSong({id, artist, cover, title, positions, scrollY, songsCount})
         positions.value = objectMove(positions.value, positions.value[id], newPosition);
 
         if (Platform.OS === 'ios') {
-          runOnJS(Haptics.impactAsync)(Haptics.ImpactFeedbackStyle.Light);
+          // runOnJS(Haptics.impactAsync)(Haptics.ImpactFeedbackStyle.Light); // add haptic
         }
       }
     },
@@ -278,13 +278,13 @@ function MovableSong({id, artist, cover, title, positions, scrollY, songsCount})
 
   return (
     <Animated.View style={animatedStyle}>
-      <BlurView intensity={moving ? 100 : 0} tint="light">
-        <PanGestureHandler onGestureEvent={gestureHandler}>
-          <Animated.View style={{maxWidth: '80%'}}>
-            <Song artist={artist} cover={cover} title={title} />
-          </Animated.View>
-        </PanGestureHandler>
-      </BlurView>
+      {/* <BlurView intensity={moving ? 100 : 0} tint="light"> // add BlurView */}
+      <PanGestureHandler onGestureEvent={gestureHandler}>
+        <Animated.View style={{maxWidth: '80%'}}>
+          <Song artist={artist} cover={cover} title={title} />
+        </Animated.View>
+      </PanGestureHandler>
+      {/* </BlurView> */}
     </Animated.View>
   );
 }
@@ -296,10 +296,10 @@ export default function App() {
 
   useAnimatedReaction(
     () => scrollY.value,
-    (scrolling) => scrollTo(scrollViewRef, 0, scrolling, false),
+    scrolling => scrollTo(scrollViewRef, 0, scrolling, false),
   );
 
-  const handleScroll = useAnimatedScrollHandler((event) => {
+  const handleScroll = useAnimatedScrollHandler(event => {
     scrollY.value = event.contentOffset.y;
   });
 
@@ -321,7 +321,7 @@ export default function App() {
               height: SONGS.length * SONG_HEIGHT,
             }}
           >
-            {SONGS.map((song) => (
+            {SONGS.map(song => (
               <MovableSong
                 key={song.id}
                 id={song.id}

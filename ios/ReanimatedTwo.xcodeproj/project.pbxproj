@@ -12,7 +12,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8558D052FAE1403B8498D464 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B827E1504F674BEF850035DC /* icomoon.ttf */; };
-		9877B5721912E3ED9CD707FC /* libPods-ReanimatedTwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C87F5F12EC53F2148C9D5BCB /* libPods-ReanimatedTwo.a */; };
+		A0CB0876AF5A55715D1583C5 /* libPods-ReanimatedTwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB04ABCC4AA23A4F43357A30 /* libPods-ReanimatedTwo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,27 +26,24 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReanimatedTwo/main.m; sourceTree = "<group>"; };
 		2A4D3605FB37403587F4C33B /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		31F4FF976B9A480FA4E56518 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		485FA8484D3208FDDE4B4073 /* libPods-ReanimatedTwo-ReanimatedTwoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedTwo-ReanimatedTwoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B195356C5784EE8994B926E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		5DBAF4EAEBBC4CCB96B93A0A /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		68209EE6A52A4EDA8514E892 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		7D84FF1F134EEEAF5502215F /* Pods-ReanimatedTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D188778DC779C4F71760F14 /* Pods-ReanimatedTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.release.xcconfig"; sourceTree = "<group>"; };
 		7DABBF5BE16B483B86EF8C03 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReanimatedTwo/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		849380EFDF33A42F4F100121 /* Pods-ReanimatedTwo-ReanimatedTwoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo-ReanimatedTwoTests.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo-ReanimatedTwoTests/Pods-ReanimatedTwo-ReanimatedTwoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B24CA19915233CBA791ADA18 /* Pods-ReanimatedTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.release.xcconfig"; sourceTree = "<group>"; };
-		B827BCEB995E0B0A0D21538B /* Pods-ReanimatedTwo-ReanimatedTwoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo-ReanimatedTwoTests.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo-ReanimatedTwoTests/Pods-ReanimatedTwo-ReanimatedTwoTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB04ABCC4AA23A4F43357A30 /* libPods-ReanimatedTwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedTwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B827E1504F674BEF850035DC /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		BA0C5D674FA84A01AEAA2E70 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		BD268B75CCD54F2590B2EBFE /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		C759C392E005405B84D8FCAC /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		C87F5F12EC53F2148C9D5BCB /* libPods-ReanimatedTwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedTwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC26850183B4A88B2E1BEFD /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		CECE475BE8184EE19757F7F1 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		D3B99174D5B840AFBCD15B1A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		E7A05A35459F4415949307E2 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAA332A8D7B04BD5B380CD51 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		FD33E2E3E3611EAE480D87D0 /* Pods-ReanimatedTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedTwo.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9877B5721912E3ED9CD707FC /* libPods-ReanimatedTwo.a in Frameworks */,
+				A0CB0876AF5A55715D1583C5 /* libPods-ReanimatedTwo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				C87F5F12EC53F2148C9D5BCB /* libPods-ReanimatedTwo.a */,
-				485FA8484D3208FDDE4B4073 /* libPods-ReanimatedTwo-ReanimatedTwoTests.a */,
+				AB04ABCC4AA23A4F43357A30 /* libPods-ReanimatedTwo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,10 +137,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7D84FF1F134EEEAF5502215F /* Pods-ReanimatedTwo.debug.xcconfig */,
-				B24CA19915233CBA791ADA18 /* Pods-ReanimatedTwo.release.xcconfig */,
-				849380EFDF33A42F4F100121 /* Pods-ReanimatedTwo-ReanimatedTwoTests.debug.xcconfig */,
-				B827BCEB995E0B0A0D21538B /* Pods-ReanimatedTwo-ReanimatedTwoTests.release.xcconfig */,
+				FD33E2E3E3611EAE480D87D0 /* Pods-ReanimatedTwo.debug.xcconfig */,
+				7D188778DC779C4F71760F14 /* Pods-ReanimatedTwo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -156,14 +150,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReanimatedTwo" */;
 			buildPhases = (
-				ADCAF7AFC62F09CC8BE8E276 /* [CP] Check Pods Manifest.lock */,
+				0EAEE4D8229D335703F8289E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				8D48564893E60E8F981C6F93 /* [CP] Embed Pods Frameworks */,
-				20114415519A8E128C8B5249 /* [CP] Copy Pods Resources */,
+				250A1EB3CF7AF9E47B98CB55 /* [CP] Embed Pods Frameworks */,
+				E3E7F64E18D9EFA81D1793F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,41 +227,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		20114415519A8E128C8B5249 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D48564893E60E8F981C6F93 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ADCAF7AFC62F09CC8BE8E276 /* [CP] Check Pods Manifest.lock */ = {
+		0EAEE4D8229D335703F8289E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,6 +247,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		250A1EB3CF7AF9E47B98CB55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E7F64E18D9EFA81D1793F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedTwo/Pods-ReanimatedTwo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -325,7 +319,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D84FF1F134EEEAF5502215F /* Pods-ReanimatedTwo.debug.xcconfig */;
+			baseConfigurationReference = FD33E2E3E3611EAE480D87D0 /* Pods-ReanimatedTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -351,7 +345,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B24CA19915233CBA791ADA18 /* Pods-ReanimatedTwo.release.xcconfig */;
+			baseConfigurationReference = 7D188778DC779C4F71760F14 /* Pods-ReanimatedTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import Animated, {
-  Extrapolate,
   interpolate,
   useAnimatedGestureHandler,
   useAnimatedStyle,
@@ -43,7 +42,7 @@ const InitialItem: React.FC<TProps> = ({item, index, bottomY}) => {
   }, []);
 
   const onGestureEvent = useAnimatedGestureHandler<PanGestureHandlerGestureEvent, any>({
-    onStart: (event) => {
+    onStart: event => {
       initialPoints.x.value = event.x;
       initialPoints.y.value = event.y;
       initialPoints.isActive.value = true;
@@ -55,11 +54,11 @@ const InitialItem: React.FC<TProps> = ({item, index, bottomY}) => {
       ctx.snapX = TX.value;
       ctx.snapY = TY.value;
     },
-    onEnd: (event, ctx) => {
+    onEnd: event => {
       // console.log(bottomY, 'BOTT Y');
-      if (Number.isInteger(bottomY) && event.absoluteY - hh - bottomY + 20 > 0) {
+      if (Number.isInteger(bottomY) && event.absoluteY - hh - Number(bottomY) + 20 > 0) {
         isScroll.value = withTiming(2);
-        translation.y.value = withSpring(bottomY - calcItemWidth);
+        translation.y.value = withSpring(Number(bottomY) - calcItemWidth);
         translation.x.value = withSpring(0);
       } else {
         isScroll.value = withTiming(0, {}, () => (initialPoints.isActive.value = false));
@@ -103,7 +102,7 @@ const InitialItem: React.FC<TProps> = ({item, index, bottomY}) => {
             },
             appearanceStyle,
           ]}
-          onLayout={(e) => console.log(e.nativeEvent.layout, 'LAYOUT')}
+          onLayout={e => console.log(e.nativeEvent.layout, 'LAYOUT')}
         >
           <Animated.View style={[{borderRadius: 12, aspectRatio: 1, overflow: 'hidden'}, stylez]}>
             <Image source={{uri: item.uri}} style={{flex: 1}} />

@@ -19,4 +19,5 @@ export {default as SlidingCounter} from './SlidingCounter/SlidingCounter';
 export {default as ClockLoader} from './ClockLoader/ClockLoader';
 export {AnimatedBottomSheet} from './AnimatedBottomSheet/AnimatedBottomSheet';
 export {WhatAboutGestures} from './WhatAboutGestures/WhatAboutGestures';
-export {default as WheelPicker} from './WheelPicker/WheelPicker';
+export {WheelPicker} from './WheelPicker/WheelPicker';
+export {WheelPicker2} from './WheelPicker/WheelPicker2';

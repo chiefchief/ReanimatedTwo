@@ -1,19 +1,19 @@
-import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import {languages} from '@constants';
+import i18n from 'i18next';
+import {Languages} from '@constants';
 
-const en = require('./localization/en.json');
+import en from './localization/en.json';
 
-const defaultLanguage = languages.EN;
+const defaultLanguage = Languages.en;
 
 export default i18n.use(initReactI18next).init({
+  compatibilityJSON: 'v3',
   resources: {
-    [languages.EN]: {translation: en},
+    [Languages.en]: {translation: en},
   },
   lng: defaultLanguage,
-  fallbackLng: languages.EN,
+  fallbackLng: Languages.en,
   react: {
-    wait: true,
     nsMode: 'default',
   },
   interpolation: {
@@ -21,5 +21,5 @@ export default i18n.use(initReactI18next).init({
   },
   nsSeparator: false,
   keySeparator: false,
-  debug: true, // DISABLE EIF NO NEED LOGS
+  debug: false, // DISABLE EIF NO NEED LOGS
 });

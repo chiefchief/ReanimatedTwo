@@ -9,7 +9,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import {View, Dimensions, Platform, StyleSheet, LayoutChangeEvent} from 'react-native';
 import {PanGestureHandler, PanGestureHandlerGestureEvent} from 'react-native-gesture-handler';
-import {useHeaderHeight} from '@react-navigation/stack';
+import {useHeaderHeight} from '@react-navigation/elements';
 
 const windowDimensions = Dimensions.get('window');
 
@@ -123,7 +123,7 @@ function Example(): React.ReactElement {
   return (
     <View style={[styles.wrapper, {height}]}>
       <ScrollableView>
-        {colors.map((color) => (
+        {colors.map(color => (
           <Box color={color} key={color} />
         ))}
       </ScrollableView>

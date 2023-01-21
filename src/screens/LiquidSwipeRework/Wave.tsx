@@ -8,7 +8,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import Svg, {Path} from 'react-native-svg';
-import MaskedView from '@react-native-community/masked-view';
+import MaskedView from '@react-native-masked-view/masked-view';
 import {Vector} from 'react-native-redash';
 
 export const {width: WIDTH, height: HEIGHT} = Dimensions.get('screen');

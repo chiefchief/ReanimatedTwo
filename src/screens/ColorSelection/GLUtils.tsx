@@ -12,14 +12,12 @@ export const useGLProgress = (node: RefObject<Node>, uniforms: Record<string, un
   const animate = () => {
     if (progress.current < 1) {
       progress.current += 0.05;
-      ((node.current as unknown) as {setDrawProps: (props: Record<string, unknown>) => void} | undefined)?.setDrawProps(
-        {
-          uniforms: {
-            ...uniforms,
-            progress: progress.current,
-          },
+      (node.current as unknown as {setDrawProps: (props: Record<string, unknown>) => void} | undefined)?.setDrawProps({
+        uniforms: {
+          ...uniforms,
+          progress: progress.current,
         },
-      );
+      });
       requestAnimationFrame(animate);
     }
   };

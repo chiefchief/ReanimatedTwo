@@ -1,9 +1,9 @@
 import {Text, View} from '@components';
 import {bottom, width} from '@constants';
 import React, {useState} from 'react';
-import {measure} from 'react-native-reanimated';
+// import {measure} from 'react-native-reanimated';
 import InitialItem from './InitialItem';
-import InitialItemCopy from './InitialItemCopy';
+// import InitialItemCopy from './InitialItemCopy';
 import {itemsData, TInitialItem} from './itemsData';
 
 const data = ['1', '2', '3', '4'];
@@ -57,7 +57,7 @@ const DragAndDrop: React.FC<TProps> = () => {
           paddingHorizontal: 16,
           justifyContent: 'space-between',
         }}
-        onLayout={(e) => setBottomY(e.nativeEvent.layout.y)}
+        onLayout={e => setBottomY(e.nativeEvent.layout.y)}
       >
         {data.map(renderData)}
       </View>

@@ -48,7 +48,7 @@ export default function UberEats() {
         initialScrollIndex={index}
         style={{flexGrow: 0}}
         data={data}
-        keyExtractor={(item) => item.key}
+        keyExtractor={item => item.key}
         contentContainerStyle={{paddingLeft: _spacing}}
         showsHorizontalScrollIndicator={false}
         horizontal
